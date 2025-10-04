@@ -1,0 +1,5 @@
+/* Functions and Directives */
+/* Import Tailwind */
+@import 'tailwindcss';
+/* Import DaisyUI */
+@plugin "daisyui";

@@ -1,0 +1,31 @@
+import { createBrowserRouter } from 'react-router';
+
+import MainLayout from '../layouts/MainLayout/MainLayout';
+import AuthLayout from '../layouts/AuthLayout/AuthLayout';
+
+import HomePage from '../pages/Home/HomePage';
+import AboutPage from '../pages/About/AboutPage';
+
+import LoginPage from '../pages/Auth/LoginPage';
+import RegisterPage from '../pages/Auth/RegisterPage';
+
+export const router = createBrowserRouter([
+  {
+    // Public Routes with Main Layout
+    path: '/',
+    Component: MainLayout,
+    children: [
+      { index: true, Component: HomePage },
+      { path: 'about', Component: AboutPage },
+    ],
+  },
+  {
+    // Auth Routes with Auth Layout
+    path: 'auth',
+    Component: AuthLayout,
+    children: [
+      { path: 'login', Component: LoginPage },
+      { path: 'register', Component: RegisterPage },
+    ],
+  },
+]);
