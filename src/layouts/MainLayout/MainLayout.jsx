@@ -5,16 +5,18 @@ import Footer from './Footer/Footer';
 
 const MainLayout = () => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       {/* Header Section */}
       <Header />
 
       {/* Main Section */}
-      <Outlet />
+      <main className="container w-[95%] mx-auto flex-1 py-10">
+        <Outlet />
+      </main>
 
       {/* Footer Section */}
       <Footer />
-    </>
+    </div>
   );
 };
 
