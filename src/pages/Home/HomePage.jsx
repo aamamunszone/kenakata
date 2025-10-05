@@ -5,6 +5,7 @@ import FlashSalesSection from './components/FlashSalesSection/FlashSalesSection'
 import CategoriesSection from './components/CategoriesSection/CategoriesSection';
 import ThisMonthSection from './components/ThisMonthSection/ThisMonthSection';
 import OurProductsSection from './components/OurProductsSection/OurProductsSection';
+import FeaturedSection from './components/FeaturedSection/FeaturedSection';
 
 const HomePage = () => {
   return (
@@ -42,6 +43,13 @@ const HomePage = () => {
       {/* Our Product Section */}
       <section>
         <OurProductsSection />
+      </section>
+
+      <hr class="border border-gray-200" />
+
+      {/* Featured Section */}
+      <section>
+        <FeaturedSection />
       </section>
 
       <hr class="border border-gray-200" />
