@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from './components/HeroSection/Sidebar/Sidebar';
 import HeroSection from './components/HeroSection/HeroSection';
 import FlashSalesSection from './components/FlashSalesSection/FlashSalesSection';
+import CategoriesSection from './components/CategoriesSection/CategoriesSection';
 
 const HomePage = () => {
   return (
@@ -19,6 +20,15 @@ const HomePage = () => {
       <section>
         <FlashSalesSection />
       </section>
+
+      <hr class="border border-gray-200" />
+
+      {/* Categories Section */}
+      <section>
+        <CategoriesSection />
+      </section>
+
+      <hr class="border border-gray-200" />
     </>
   );
 };

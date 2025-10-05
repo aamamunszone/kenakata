@@ -6,6 +6,7 @@ const FlashSalesSection = () => {
       <h3 class="relative pl-6 font-medium text-[red] before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:h-8 before:w-3 before:bg-[red] before:rounded-sm mb-10">
         Today's
       </h3>
+
       <div className="flex flex-col justify-between gap-7">
         <div className="flex justify-between items-center w-full">
           <div className="flex justify-between items-center gap-10">
