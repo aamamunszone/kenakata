@@ -10,7 +10,7 @@ const MainLayout = () => {
       <Header />
 
       {/* Main Section */}
-      <main className="container w-[95%] mx-auto flex-1 py-10">
+      <main className="container w-[95%] mx-auto flex-1 py-10 space-y-25">
         <Outlet />
       </main>
 
