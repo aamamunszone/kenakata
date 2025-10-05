@@ -9,11 +9,14 @@ import AboutPage from '../pages/About/AboutPage';
 import LoginPage from '../pages/Auth/LoginPage';
 import RegisterPage from '../pages/Auth/RegisterPage';
 
+import ErrorPage from '../pages/Error/ErrorPage';
+
 export const router = createBrowserRouter([
   {
     // Public Routes with Main Layout
     path: '/',
     Component: MainLayout,
+    errorElement: <ErrorPage />,
     children: [
       { index: true, Component: HomePage },
       { path: 'about', Component: AboutPage },
@@ -23,6 +26,7 @@ export const router = createBrowserRouter([
     // Auth Routes with Auth Layout
     path: 'auth',
     Component: AuthLayout,
+    errorElement: <ErrorPage />,
     children: [
       { path: 'login', Component: LoginPage },
       { path: 'register', Component: RegisterPage },
