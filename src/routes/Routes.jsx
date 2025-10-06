@@ -5,6 +5,7 @@ import AuthLayout from '../layouts/AuthLayout/AuthLayout';
 
 import HomePage from '../pages/Home/HomePage';
 import ProductsPage from '../pages/Products/ProductsPage';
+import ProductDetails from '../pages/Products/components/ProductDetails/ProductDetails';
 import AboutPage from '../pages/About/AboutPage';
 import ContactPage from '../pages/Contact/ContactPage';
 
@@ -22,6 +23,7 @@ export const router = createBrowserRouter([
     children: [
       { index: true, Component: HomePage },
       { path: 'products', Component: ProductsPage },
+      { path: 'products/:id', Component: ProductDetails },
       { path: 'about', Component: AboutPage },
       { path: 'contact', Component: ContactPage },
     ],

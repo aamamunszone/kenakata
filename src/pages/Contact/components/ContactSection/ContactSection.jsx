@@ -16,7 +16,7 @@ const ContactSection = () => {
           <span>Phone: +8801611112222</span>
         </div>
 
-        <hr class="border border-gray-200" />
+        <hr className="border border-gray-200" />
 
         <div className="flex flex-col gap-5">
           <h3 className="flex items-center gap-2.5">
