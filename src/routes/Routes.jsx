@@ -4,13 +4,14 @@ import MainLayout from '../layouts/MainLayout/MainLayout';
 import AuthLayout from '../layouts/AuthLayout/AuthLayout';
 
 import HomePage from '../pages/Home/HomePage';
+import ProductsPage from '../pages/Products/ProductsPage';
 import AboutPage from '../pages/About/AboutPage';
+import ContactPage from '../pages/Contact/ContactPage';
 
 import LoginPage from '../pages/Auth/LoginPage';
 import RegisterPage from '../pages/Auth/RegisterPage';
 
 import ErrorPage from '../pages/Error/ErrorPage';
-import ContactPage from '../pages/Contact/ContactPage';
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, Component: HomePage },
+      { path: 'products', Component: ProductsPage },
       { path: 'about', Component: AboutPage },
       { path: 'contact', Component: ContactPage },
     ],
