@@ -24,35 +24,35 @@ const HomePage = () => {
         <FlashSalesSection />
       </section>
 
-      <hr class="border border-gray-200" />
+      <hr className="border border-gray-200" />
 
       {/* Categories Section */}
       <section>
         <CategoriesSection />
       </section>
 
-      <hr class="border border-gray-200" />
+      <hr className="border border-gray-200" />
 
       {/* This Month Section */}
       <section>
         <ThisMonthSection />
       </section>
 
-      <hr class="border border-gray-200" />
+      <hr className="border border-gray-200" />
 
       {/* Our Product Section */}
       <section>
         <OurProductsSection />
       </section>
 
-      <hr class="border border-gray-200" />
+      <hr className="border border-gray-200" />
 
       {/* Featured Section */}
       <section>
         <FeaturedSection />
       </section>
 
-      <hr class="border border-gray-200" />
+      <hr className="border border-gray-200" />
     </>
   );
 };
