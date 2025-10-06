@@ -10,6 +10,7 @@ import LoginPage from '../pages/Auth/LoginPage';
 import RegisterPage from '../pages/Auth/RegisterPage';
 
 import ErrorPage from '../pages/Error/ErrorPage';
+import ContactPage from '../pages/Contact/ContactPage';
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
     children: [
       { index: true, Component: HomePage },
       { path: 'about', Component: AboutPage },
+      { path: 'contact', Component: ContactPage },
     ],
   },
   {
