@@ -36,16 +36,6 @@ const ProductsPage = () => {
     );
   }
 
-  // const convertedSearchInputValue = search.trim().toLocaleLowerCase();
-  // const searchingProducts = convertedSearchInputValue
-  //   ? products.filter((product) =>
-  //       product.title
-  //         .trim()
-  //         .toLocaleLowerCase()
-  //         .includes(convertedSearchInputValue)
-  //     )
-  //   : products;
-
   return (
     <>
       {/* All Products Section */}

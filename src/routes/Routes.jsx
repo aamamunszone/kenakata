@@ -6,6 +6,7 @@ import AuthLayout from '../layouts/AuthLayout/AuthLayout';
 import HomePage from '../pages/Home/HomePage';
 import ProductsPage from '../pages/Products/ProductsPage';
 import ProductDetails from '../pages/Products/components/ProductDetails/ProductDetails';
+import WishlistProducts from '../pages/Products/components/WishlistProducts/WishlistProducts';
 import AboutPage from '../pages/About/AboutPage';
 import ContactPage from '../pages/Contact/ContactPage';
 
@@ -24,6 +25,7 @@ export const router = createBrowserRouter([
       { index: true, Component: HomePage },
       { path: 'products', Component: ProductsPage },
       { path: 'products/:id', Component: ProductDetails },
+      { path: 'wishlist', Component: WishlistProducts },
       { path: 'about', Component: AboutPage },
       { path: 'contact', Component: ContactPage },
     ],

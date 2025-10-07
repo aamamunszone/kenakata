@@ -1,6 +1,6 @@
 import { Heart, ShoppingCart } from 'lucide-react';
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Header = () => {
   return (
@@ -53,9 +53,9 @@ const Header = () => {
               placeholder="What are you looking for ?"
             />
           </label>
-          <button>
+          <Link to="/wishlist">
             <Heart />
-          </button>
+          </Link>
           <button>
             <ShoppingCart />
           </button>
