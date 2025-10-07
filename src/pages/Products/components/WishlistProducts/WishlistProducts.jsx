@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import WishlistProductCard from './components/WishlistProductCard/WishlistProductCard';
+import WishlistProductsChart from './components/WishlistProductsChart/WishlistProductsChart';
 
 const WishlistProducts = () => {
   const [wishlist, setWishlist] = useState([]);
@@ -58,6 +59,12 @@ const WishlistProducts = () => {
               setWishlist={setWishlist}
             />
           ))}
+        </div>
+
+        <hr className="border border-gray-200" />
+
+        <div>
+          <WishlistProductsChart wishlist={wishlist} />
         </div>
       </section>
     </>
